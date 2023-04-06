@@ -89,7 +89,7 @@ app.post('/api/users/:userId/exercises', async function (req, res) {
     });
 
     res.json({
-      'username': exercise.username,
+      'username': user.username,
       'description': exercise.description,
       'duration': exercise.duration,
       'date': exercise.date.toDateString(),
